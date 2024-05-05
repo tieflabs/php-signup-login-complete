@@ -1,0 +1,161 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	font-family: 'Poppins', sans-serif;*/
+	scroll-behavior: smooth;
+}
+:root{
+    --main: #000;
+    --a: #fff;
+    --b: lavender;
+    --info: grey;
+    --error: red;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.
+body{
+	padding: 0;
+	margin: 0;
+	background: url('banner.jpg');
+	background-size: cover;
+}
+.page{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.form__cover{
+	position: absolute;
+	height: 545px;
+	width: 400px;
+	background: var(--main);
+	border-radius: 10px;
+}
+
+/*Form logo*/
+.form__logo{
+   position: absolute;
+   height: 60px;
+   width: 250px;
+   font-size: 50px;
+   top: 20px;
+   color: var(--b);
+   z-index: 1000;
+   cursor: pointer;
+   background: transparent;
+}
+.icy__icon{
+	height: 50px;
+	width: 50px;
+}
+.icy__icon-layer1{
+	fill: var(--b);
+}
+.form__logo:hover
+.icy__text,
+.form__logo:hover
+.icy__icon-layer1{
+	fill: var(--a);
+ 	color: var(--a);
+}
+
+/*Form information*/
+.form__title{
+	position: absolute;
+    font-size: 30px;
+	top: 100px;
+	color: var(--a);
+}
+.form_feedback{
+	position: absolute;
+    font-size: 15px;
+	top: 160px;
+	color: var(--error);
+}
+
+/*Fields For cridantial*/
+.form__box{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	top: 80px;
+	flex-direction: column;
+}
+.field{
+	position: relative;
+	height: 50px;
+	width: 80%;
+	margin: 10px;
+	padding: 18px;
+	font-size: 20px;
+	outline-style: none;
+	border-radius: 10px;
+	border: none;
+	background: var(--a);
+	font-family: 'Jost', sans-serif;
+}
+.field:hover{
+	scale: 102%;
+	background: var(--a);
+}
+
+/*Action button*/
+.acting{
+	position: relative;
+	height:50px;
+	width: 80%;
+	margin: 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	border: 1px solid var(--a);
+	background: var(--main);
+	color: var(--a);
+	transition: 0.2s all;
+}
+.acting:hover{
+	color: var(--main);
+	background: var(--a);
+
+}
+
+
+.else__cover{
+	position: relative;
+	bottom: -10px;
+}
+
+/*For restore cridantial*/
+.restore__box{
+	height: 15px;
+	width: 16px;
+	height: 17px;
+	width: 18px;
+	margin: 5px;
+	cursor: pointer;
+}
+.restore__text{
+    color: var(--info);
+    font-size: 17px;
+    margin: 7px 7px;
+}
+
+
+/*Don't have an account*/
+.signup__text{
+	color: var(--a);
+    text-decoration: initial;
+	margin-left: 5px;
+}
+.signup__text:hover{
+	color: var(--b);
+	text-decoration: blink;
+}
